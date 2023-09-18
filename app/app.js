@@ -64,7 +64,7 @@ function getUsers() {
       `<p><span class="studentStat">Email:</span> ${user.email}</p> `
     );
     $(`#${i}`).append(`<p><span class="studentStat">Classes:</span> </p> `);
-    $.each(user.courses, (i, cl) => {
+    $.each(user.courses, (idx, cl) => {
       $(`#${i}`).append(` <p>${cl.className}</p>`);
     });
   });
